@@ -4,7 +4,7 @@ import Logo from '../assets/Logo.png'
 function Header() {
   return (
     <>
-    <div className="flex items-center  bg-[url('../assets/p3.png')] bg-center">
+    <div className="flex items-center ">
         <div>
         <img src={Logo} alt="" />
         </div>   
