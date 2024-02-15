@@ -40,21 +40,21 @@ function Header() {
       }, [isMenuOpen]);
   return (
     <>
-<div className=" bg-[#2F1F14]  bg-cover bg-center relative">
-<img src={backgroundImage} alt=""  className="absolute w-full h-full object-cover" />
+<div className=" bg-[#2F1F14]  relative ">
+<img src={backgroundImage}  alt="background image"  className={`absolute w-full h-full object-contain max-sm:object-cover object-right ${isMenuOpen? 'hidden' :'' }`} />
 
-<div className={`flex py-5 justify-start max-md:ml-0 lg:ml-20 max-md:justify-between  relative ${isMenuOpen? '' :'items-center' }`}>
+<div className={`flex  justify-start max-md:ml-0 lg:ml-28 max-md:justify-between relative ${isMenuOpen? '' :'items-center' }`}>
         <div>
         <img src={Logo}  className='textwhite max-md:max-w-[10rem]  max-w-[19rem] ' alt="" />
         </div>   
 
         <nav className={` ${isMenuOpen ? 'flex   justify-center items-center -ml-16 h-screen' : ' '}`}>
-            <ul className={`flex  text-white font-semibold ${isMenuOpen ? '  max-md:flex-col' : 'max-md:hidden'}`}>
-                <li className='mx-5 max-md:my-5 max-md:mx-0  '>Home</li>
-                <li className='mx-5 max-md:my-5 max-md:mx-0 '>AboutUs</li>
-                <li className='mx-5 max-md:my-5 max-md:mx-0 '>Features</li>
-                <li className='mx-5 max-md:my-5 max-md:mx-0 '>Purchase</li>
-                <li className='mx-5 max-md:my-5 max-md:mx-0 '>ContactUs</li>
+            <ul className={`flex   font-semibold ${isMenuOpen ? '  max-md:flex-col text-white' : 'max-md:hidden   bg-yellow-50'}`}>
+                <li className='mx-5 max-md:my-5 max-md:mx-0 cursor-pointer  '>Home</li>
+                <li className='mx-5 max-md:my-5 max-md:mx-0 cursor-pointer '>AboutUs</li>
+                <li className='mx-5 max-md:my-5 max-md:mx-0 cursor-pointer '>Features</li>
+                <li className='mx-5 max-md:my-5 max-md:mx-0 cursor-pointer '>Purchase</li>
+                <li className='mx-5 max-md:my-5 max-md:mx-0 cursor-pointer '>ContactUs</li>
             </ul>
         </nav>     
         <div className='md:hidden'>
@@ -62,6 +62,11 @@ function Header() {
           <FaBars size={24} />
         </button>
       </div>
+    </div>
+
+    <div className={`flex text-white justify-center items-center -top-11 lg:-left-40 flex-col text relative ${isMenuOpen? 'hidden' :'' }`}>
+        <h1>Coffee Makes Mood</h1>
+        <p>Indulge in Every Sip: Experience the Richness of Coffee!</p>
     </div>
 </div>
     </>
