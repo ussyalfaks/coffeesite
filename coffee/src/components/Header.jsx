@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
-import { FcHome } from "react-icons/fc";
 import Logo from '../assets/Logo.png'
 import backgroundImage from '../assets/bgimage.png'
 // import backgroundImage from '../assets/fir.jpg'
