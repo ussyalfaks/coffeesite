@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily :{
+        pompiere:['Pompiere', 'sans-serif'],
+        lobster:['Lobster', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

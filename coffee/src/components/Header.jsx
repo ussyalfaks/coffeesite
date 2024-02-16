@@ -63,9 +63,9 @@ function Header() {
       </div>
     </div>
 
-    <div className={`flex text-white justify-center items-center -top-11 lg:-left-40 flex-col text relative ${isMenuOpen? 'hidden' :'' }`}>
-        <h1>Coffee Makes Mood</h1>
-        <p>Indulge in Every Sip: Experience the Richness of Coffee!</p>
+    <div className={`flex text-white justify-center items-center -top-11 max-md:-left-23 max-md:-top-7 lg:-left-40 flex-col text relative ${isMenuOpen? 'hidden' :'' }`}>
+        <h1 className='font-pompiere text-7xl max-md:text-4xl'>Coffee Makes Mood</h1>
+        <p className=' max-md:mx-5 font-lobster max-md:text-xl text-2xl'>Indulge in Every Sip: Experience the Richness of Coffee!</p>
     </div>
 </div>
     </>
