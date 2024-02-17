@@ -48,14 +48,15 @@ function Header() {
         </div>   
 
         <nav className={` ${isMenuOpen ? 'flex   justify-center items-center -ml-16 h-screen' : ' '}`}>
-            <ul className={`flex   font-semibold ${isMenuOpen ? '  max-md:flex-col text-white' : 'max-md:hidden   bg-yellow-50'}`}>
-                <li className='mx-5 max-md:my-5 max-md:mx-0 cursor-pointer  '>Home</li>
+            <ul className={`flex  text-white font-semibold ${isMenuOpen ? '  max-md:flex-col ' : 'max-md:hidden rounded-md  bg-[#704338]'}`}>
+                <li className= {`mx-5 max-md:my-5 max-md:mx-0 cursor-pointer ${isMenuOpen ? '' : ' bg-white text-[#704338]'}`}>Home</li>
                 <li className='mx-5 max-md:my-5 max-md:mx-0 cursor-pointer '>AboutUs</li>
                 <li className='mx-5 max-md:my-5 max-md:mx-0 cursor-pointer '>Features</li>
                 <li className='mx-5 max-md:my-5 max-md:mx-0 cursor-pointer '>Purchase</li>
                 <li className='mx-5 max-md:my-5 max-md:mx-0 cursor-pointer '>ContactUs</li>
             </ul>
         </nav>     
+
         <div className='md:hidden'>
         <button onClick={toggleMenu}
          className='text-black bg-white max-md:p-2 rounded-lg m-5'>
