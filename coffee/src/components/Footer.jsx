@@ -5,6 +5,7 @@ import Logo from '../assets/Logo.png'
 
 const Footer = () => {
   return (
+   <>
     <div className="flex justify-center items-start max-md:flex-col  bg-[#291600]">
       {/* Contact Us Div */}
       <div className=" p-6 rounded-md shadow-md m-4 text-white">
@@ -39,8 +40,12 @@ const Footer = () => {
         <p> (08) 400 2000</p>
         <p> coffeeborcelle@gmail.com</p>
       </div>
-      
+    
     </div>
+    <div>
+        <p className='text-center bg-[#DBBCA1] py-5'>&#169; 2020 All Rights Reserved Coffee  Borcelle.</p>
+      </div>
+   </>
   );
 };
 
