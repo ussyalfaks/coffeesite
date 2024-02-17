@@ -39,6 +39,7 @@ const Footer = () => {
         <p> (08) 400 2000</p>
         <p> coffeeborcelle@gmail.com</p>
       </div>
+      
     </div>
   );
 };
