@@ -56,7 +56,6 @@ function Header() {
                 <li className='mx-5 max-md:my-5 max-md:mx-0 cursor-pointer '>ContactUs</li>
             </ul>
         </nav>     
-
         <div className='md:hidden'>
         <button onClick={toggleMenu}
          className='text-black bg-white max-md:p-2 rounded-lg m-5'>
